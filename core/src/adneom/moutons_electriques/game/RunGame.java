@@ -4,7 +4,6 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
@@ -30,20 +29,17 @@ public class RunGame extends ApplicationAdapter implements InputProcessor {
     float w ;
     float h;
 
-    private int arrivaleX = 0;
-    private int arrivaleY = 0;
-    int w2;
-    int h2;
+    private float arrivaleX = 0;
+    private float arrivaleY = 0;
     private Stage stage;
-
+    //indicates if runner jumped
+    private boolean isJumped = false;
 
     @Override
     public void create() {
         Gdx.input.setInputProcessor(this);
          w = Gdx.graphics.getWidth();
          h = Gdx.graphics.getHeight();
-        w2 = (int)w;
-        h2 = (int)h;
         batch = new SpriteBatch();
         gameStart = false;
 
@@ -107,8 +103,9 @@ public class RunGame extends ApplicationAdapter implements InputProcessor {
 
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-        arrivaleX= screenX;
-        arrivaleY = screenY;
+        arrivaleX = 0;
+        isJumped = !isJumped;
+        arrivaleY = (isJumped) ? 550f : 0f;
         return false;
     }
 

@@ -5,13 +5,8 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.actions.MoveToAction;
-
-import jdk.nashorn.internal.runtime.Context;
 
 /**
  * Test Actions
@@ -21,22 +16,20 @@ public class SecondTest extends ApplicationAdapter{
 
     private Stage stage;
     //position:
-    private int arrivaleX = 0;
-    private int arrivaleY = 0;
+    private float arrivaleX = 0;
+    private float arrivaleY = 0;
     //batch:
     private SpriteBatch batch;
     //image
     private Texture runner;
+    //indicates if runner jumped
+    private boolean isJumped = false;
 
-    int w;
-    int h;
 
     //called first time
     @Override
     public void create() {
         super.create();
-        w = (int)Gdx.graphics.getWidth();
-        h = (int)Gdx.graphics.getHeight();
         stage = new Stage();
         batch = new SpriteBatch();
         runner = new Texture(Gdx.files.internal("runner.gif"));
@@ -60,8 +53,9 @@ public class SecondTest extends ApplicationAdapter{
 
             @Override
             public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-                arrivaleX= screenX;
-                arrivaleY = screenY;
+                arrivaleX = 0;
+                isJumped = !isJumped;
+                arrivaleY = (isJumped) ? 550f : 0f;
                 return false;
             }
 
@@ -95,20 +89,7 @@ public class SecondTest extends ApplicationAdapter{
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act(Gdx.graphics.getDeltaTime());
         batch.begin();
-        arrivaleX = Math.abs(arrivaleX);
-        arrivaleY = Math.abs(arrivaleY);
-        System.out.println(""+arrivaleX+" - "+arrivaleY+"  "+w+" "+h+" !!! ");
-        if(arrivaleX > arrivaleY && arrivaleY == 0){
-            arrivaleX = (w - arrivaleX);
-            batch.draw(runner,arrivaleX,0);
-        } else if(arrivaleY > arrivaleX && arrivaleX == 0){
-            arrivaleY = (arrivaleY - h);
-            batch.draw(runner,0,arrivaleY);
-        } else if(arrivaleX > 0 && arrivaleY > 0){
-            arrivaleY = (arrivaleY - h);
-            arrivaleX = (arrivaleX - w);
-            batch.draw(runner,arrivaleX,arrivaleY);
-        }
+        batch.draw(runner,arrivaleX,arrivaleY);
         batch.end();
     }
 
