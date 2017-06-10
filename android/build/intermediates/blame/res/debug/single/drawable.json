@@ -140,6 +140,10 @@
         "source": "C:\\Users\\gtshilombowanticale\\.android\\build-cache\\fa0f1cc4c032f703165d64391b3cfee4a982c4f1\\output\\res\\drawable\\design_fab_background.xml"
     },
     {
+        "merged": "C:\\Users\\gtshilombowanticale\\Desktop\\hakathon\\run-game\\android\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
+        "source": "C:\\Users\\gtshilombowanticale\\Desktop\\hakathon\\run-game\\android\\res\\drawable\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\gtshilombowanticale\\Desktop\\hakathon\\run-game\\android\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "C:\\Users\\gtshilombowanticale\\.android\\build-cache\\0cd70b00b77d1da82612acac3d4828e8e459a6e9\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
