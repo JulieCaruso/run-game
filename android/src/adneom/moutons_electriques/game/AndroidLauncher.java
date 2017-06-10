@@ -5,6 +5,9 @@ import android.os.Bundle;
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 
+import adneom.game.RunGame;
+import adneom.game.SecondTest;
+
 /**
  * This classe is used to launch the Game
  */

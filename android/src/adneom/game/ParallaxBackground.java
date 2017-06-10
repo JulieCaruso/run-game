@@ -1,10 +1,8 @@
-package adneom.moutons_electriques.game;
+package adneom.game;
 
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
-
-import adneom.moutons_electriques.game.ParallaxLayer;
 
 /**
  * Created by jcaruso on 10-06-17.
