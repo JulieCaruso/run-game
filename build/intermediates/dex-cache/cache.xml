@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        revision="25.0.2"
+        sha1="3cde87fd20362fdc8bd37268df2d0236dd2acd71">
+        <dex dex="C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\build\intermediates\pre-dexed\debug\core-1.0_aca381135443b44339fe5e3d908027619f5df744.jar" />
+    </item>
+
+</items>
