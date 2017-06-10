@@ -229,11 +229,9 @@ public class PhotoActivity extends AppCompatActivity {
     private void updateUser() {
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("id", user.getId());
-        jsonObject.addProperty("photo1", user.getPhoto1());
-        jsonObject.addProperty("photo2", user.getPhoto2());
         jsonObject.addProperty("score", user.getScore());
         Ion.with(this)
-                .load(App.URL + "/users/" + user.getId())
+                .load("PUT", App.URL + "/users/" + user.getId())
                 .setHeader("Content-Type", "application/json")
                 .setLogging("ION_LOGGING", Log.VERBOSE)
                 .setJsonObjectBody(jsonObject)

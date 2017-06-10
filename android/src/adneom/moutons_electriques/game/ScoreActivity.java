@@ -36,7 +36,11 @@ public class ScoreActivity extends AppCompatActivity {
         adapter = new ScoreAdapter(this, users);
         recycler.setLayoutManager(new LinearLayoutManager(this));
         recycler.setAdapter(adapter);
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
         getUsers();
     }
 

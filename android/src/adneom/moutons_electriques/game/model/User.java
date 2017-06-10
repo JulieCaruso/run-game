@@ -123,7 +123,7 @@ public class User implements Parcelable, Comparable<User> {
 
     @Override
     public int compareTo(@NonNull User o) {
-        return this.score.compareTo(o.score);
+        return o.score.compareTo(this.score);
     }
 }
 
