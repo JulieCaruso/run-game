@@ -3,4 +3,6 @@
 
     <string name="app_name">run-game</string>
 
+    <string name="game_over">Game over !!</string>
+
 </resources>
