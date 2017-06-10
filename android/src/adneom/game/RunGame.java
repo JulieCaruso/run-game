@@ -1,4 +1,8 @@
-package adneom.moutons_electriques.game;
+package adneom.game;
+
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.util.Log;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -11,6 +15,12 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Stage;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 
 /**
@@ -34,8 +44,8 @@ public class RunGame extends ApplicationAdapter implements InputProcessor {
 
     private float runnerX = 0f;
     private float runnerY = 0f;
-    private float logoX = 480f;
-    private float logoY = 770f;
+    private float logoX = 350f;
+    private float logoY = 750f;
     private Stage stage;
     //indicates if runner jumped
     private boolean isJumped = false;
@@ -59,12 +69,34 @@ public class RunGame extends ApplicationAdapter implements InputProcessor {
         sprite.setPosition(0, 0);
         sprite.setSize(w, h);
 
-        adneom = new Texture(Gdx.files.internal("adneom_logo.png"));
+        adneom = getImage();
 
         textureRegion = new TextureRegion(texture, 0, 0, w, h);
         background = new ParallaxBackground(new ParallaxLayer[]{
                 new ParallaxLayer(textureRegion, new Vector2(1, 1), new Vector2(0, 0)),}, w, h, new Vector2(50, 0));
 
+    }
+
+    public Texture getImage(){
+        Pixmap pixmap = null;
+        try {
+            URL url = new URL("https://www.barefoot-studio.be/img/JeremyJacquet.png");
+            byte[] buff = new byte[1024];
+            int bytesRead;
+            ByteArrayOutputStream bao = new ByteArrayOutputStream();
+            InputStream in = url.openConnection().getInputStream();
+            while((bytesRead = in.read(buff)) != -1) {
+                bao.write(buff, 0, bytesRead);
+            }
+            pixmap = new Pixmap(bao.toByteArray(),0,bao.size());
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+            Log.e("E",e.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
+            Log.e("E",e.getMessage());
+        }
+        return new Texture(pixmap);
     }
 
     @Override
@@ -111,10 +143,10 @@ public class RunGame extends ApplicationAdapter implements InputProcessor {
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
         runnerX = 0f;
-        logoX = 450f;
+        logoX = 350f;
         isJumped = !isJumped;
         runnerY = (isJumped) ? 550f : 0f;
-        logoY = (isJumped) ? 1320f : 779f;
+        logoY = (isJumped) ? 1320f : 750f;
         return false;
     }
 

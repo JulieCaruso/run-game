@@ -1,4 +1,4 @@
-package adneom.moutons_electriques.game;
+package adneom.game;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -27,6 +27,7 @@ public class SecondTest extends ApplicationAdapter{
     private Texture adneom;
     //indicates if runner jumped
     private boolean isJumped = false;
+    //private User user;
 
 
     //called first time

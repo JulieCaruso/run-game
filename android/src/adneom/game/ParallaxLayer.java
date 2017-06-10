@@ -1,4 +1,4 @@
-package adneom.moutons_electriques.game;
+package adneom.game;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
