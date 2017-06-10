@@ -199,15 +199,17 @@ public class RunGame extends ApplicationAdapter implements InputProcessor {
 
     private void checkCollision () {
         if (obstacle != null) {
-            int py = (int)runnerY;
+            int py1 = (int)runnerY;
+            int py2 = (int)runnerY + runner.getHeight();
             int oy1 = obstacleY;
             int oy2 = obstacleY + obstacle.getHeight();
 
-            int px = (int)runnerX;
+            int px1 = (int)runnerX;
+            int px2 = (int)runnerX + runner.getWidth();
             int ox1 = obstacleX;
             int ox2 = obstacleX + obstacle.getWidth();
 
-            if (py > oy1 && py < oy2 && px > ox1 && px < ox2) {
+            if (py2 > oy1 && py2 < oy2 && px2 > ox1 && px2 < ox2) {
                 sourceX = 0;
             }
         }
