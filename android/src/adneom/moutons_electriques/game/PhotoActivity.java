@@ -1,7 +1,6 @@
 package adneom.moutons_electriques.game;
 
 import android.Manifest;
-import android.app.LauncherActivity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -97,7 +96,7 @@ public class PhotoActivity extends AppCompatActivity {
     }
 
     private void enterGame() {
-        Intent intent = new Intent(PhotoActivity.this, LauncherActivity.class);
+        Intent intent = new Intent(PhotoActivity.this, AndroidLauncher.class);
         startActivity(intent);
     }
 
