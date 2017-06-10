@@ -1,57 +1,159 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:2:1-26:12
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:2:1-51:12
 	package
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:3:5-46
-		INJECTED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml
-		INJECTED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:3:5-46
+		INJECTED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml
+		INJECTED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:5:5-30
-		INJECTED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml
-		INJECTED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml
+		INJECTED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml
 	android:versionCode
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:4:5-28
-		INJECTED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml
-		INJECTED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml
+		INJECTED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:2:11-69
 uses-sdk
-ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:7:5-73
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.3.1] C:\Users\jcaruso\.android\build-cache\d76f6792426193c252866a44768ce42cc81a8694\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\jcaruso\.android\build-cache\74ca6cd3646bc6e82f733fab31f44df3dcef9d2f\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\jcaruso\.android\build-cache\89ba7386b6e2963f8104e3098c4fdd687aecda11\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\jcaruso\.android\build-cache\04246a0337500388e80e377aba3b3f27e2276b8e\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\jcaruso\.android\build-cache\f8bf6be508f893b63567276b36f4b3572c76f096\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\jcaruso\.android\build-cache\ff354a7e4c586ca55e3e531cd2b649e8e59c91d1\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\jcaruso\.android\build-cache\e2f8a112f828b393d3c4e1f0c025e7eb1173c6de\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\jcaruso\.android\build-cache\e03e07579454b4d9e71cceccf74d9d716db844f7\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\jcaruso\.android\build-cache\43f2bee5b182eda17f87549947f0d31475866bf6\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\jcaruso\.android\build-cache\d14cbdd163c4c3db89652e786737eedf6e92a33d\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\jcaruso\.android\build-cache\ff957e8562b9ddfe5d6818d1e9e9f8e3b31b6d4f\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jcaruso\.android\build-cache\d1fb9ab8aed72ea82497e7b14801137cbae23a3e\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.jakewharton:butterknife:8.6.0] C:\Users\jcaruso\.android\build-cache\f77187b7d84311c426df5bfcf7622c4d175c6f8d\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\jcaruso\.android\build-cache\ccae9a8102530cd3e00d9542f4a559af721427b2\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.koushikdutta.ion:ion:2.1.9] C:\Users\jcaruso\.android\build-cache\54b48e92c4371afa2fdf1a8aa4140f589ab792be\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.koushikdutta.async:androidasync:2.1.9] C:\Users\jcaruso\.android\build-cache\d7520bfcbeb9de3177b7b80bd0b452535b1a333c\output\AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\jcaruso\.android\build-cache\d76f6792426193c252866a44768ce42cc81a8694\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:7:41-70
-		INJECTED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml
-		INJECTED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml
+		INJECTED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:7:15-40
-		INJECTED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml
-		INJECTED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:8:9-34
+		INJECTED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml
+		INJECTED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:12:22-72
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:13:22-77
 application
-ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:9:5-24:19
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:15:5-49:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\jcaruso\.android\build-cache\d76f6792426193c252866a44768ce42cc81a8694\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\jcaruso\.android\build-cache\74ca6cd3646bc6e82f733fab31f44df3dcef9d2f\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\jcaruso\.android\build-cache\89ba7386b6e2963f8104e3098c4fdd687aecda11\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\jcaruso\.android\build-cache\04246a0337500388e80e377aba3b3f27e2276b8e\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\jcaruso\.android\build-cache\ff354a7e4c586ca55e3e531cd2b649e8e59c91d1\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\jcaruso\.android\build-cache\e2f8a112f828b393d3c4e1f0c025e7eb1173c6de\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\jcaruso\.android\build-cache\e03e07579454b4d9e71cceccf74d9d716db844f7\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\jcaruso\.android\build-cache\43f2bee5b182eda17f87549947f0d31475866bf6\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\jcaruso\.android\build-cache\d14cbdd163c4c3db89652e786737eedf6e92a33d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\jcaruso\.android\build-cache\ff957e8562b9ddfe5d6818d1e9e9f8e3b31b6d4f\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\jcaruso\.android\build-cache\d1fb9ab8aed72ea82497e7b14801137cbae23a3e\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\jcaruso\.android\build-cache\ccae9a8102530cd3e00d9542f4a559af721427b2\output\AndroidManifest.xml:29:5-20
+MERGED from [com.koushikdutta.ion:ion:2.1.9] C:\Users\jcaruso\.android\build-cache\54b48e92c4371afa2fdf1a8aa4140f589ab792be\output\AndroidManifest.xml:13:5-14:19
+MERGED from [com.koushikdutta.async:androidasync:2.1.9] C:\Users\jcaruso\.android\build-cache\d7520bfcbeb9de3177b7b80bd0b452535b1a333c\output\AndroidManifest.xml:13:5-14:19
 	android:label
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:12:9-41
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:19:9-41
 	android:allowBackup
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:17:9-35
 	android:icon
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:11:9-45
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:18:9-45
 	android:theme
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:13:9-40
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:20:9-40
+	android:name
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:16:9-28
 activity#adneom.moutons_electriques.game.AndroidLauncher
-ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:14:9-23:20
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:21:9-25:53
 	android:screenOrientation
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:17:13-50
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:25:13-50
 	android:label
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:16:13-45
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:24:13-45
 	android:configChanges
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:18:13-83
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:23:13-83
 	android:name
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:15:13-75
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:22:13-44
+activity#adneom.moutons_electriques.game.MainActivity
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:26:9-36:20
+	android:screenOrientation
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:30:13-49
+	android:configChanges
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:29:13-63
+	android:theme
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:28:13-44
+	android:name
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:27:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:19:13-22:29
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:21:17-77
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\AndroidManifest.xml:21:27-74
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:34:27-74
+activity#adneom.moutons_electriques.game.PhotoActivity
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:37:9-42:52
+	android:screenOrientation
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:42:13-49
+	android:label
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:40:13-39
+	android:configChanges
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:39:13-63
+	android:theme
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:41:13-44
+	android:name
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:38:13-42
+activity#adneom.moutons_electriques.game.ScoreActivity
+ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:43:9-48:52
+	android:screenOrientation
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:48:13-49
+	android:label
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:46:13-39
+	android:configChanges
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:45:13-63
+	android:theme
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:47:13-44
+	android:name
+		ADDED from C:\Users\jcaruso\Documents\Code\Hackathon\mobile\run-game\android\AndroidManifest.xml:44:13-42
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\jcaruso\.android\build-cache\d76f6792426193c252866a44768ce42cc81a8694\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\jcaruso\.android\build-cache\74ca6cd3646bc6e82f733fab31f44df3dcef9d2f\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\jcaruso\.android\build-cache\89ba7386b6e2963f8104e3098c4fdd687aecda11\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\jcaruso\.android\build-cache\04246a0337500388e80e377aba3b3f27e2276b8e\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\jcaruso\.android\build-cache\f8bf6be508f893b63567276b36f4b3572c76f096\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\jcaruso\.android\build-cache\ff354a7e4c586ca55e3e531cd2b649e8e59c91d1\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\jcaruso\.android\build-cache\e2f8a112f828b393d3c4e1f0c025e7eb1173c6de\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\jcaruso\.android\build-cache\e03e07579454b4d9e71cceccf74d9d716db844f7\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\jcaruso\.android\build-cache\43f2bee5b182eda17f87549947f0d31475866bf6\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\jcaruso\.android\build-cache\d14cbdd163c4c3db89652e786737eedf6e92a33d\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\jcaruso\.android\build-cache\ff957e8562b9ddfe5d6818d1e9e9f8e3b31b6d4f\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\jcaruso\.android\build-cache\ccae9a8102530cd3e00d9542f4a559af721427b2\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\jcaruso\.android\build-cache\d76f6792426193c252866a44768ce42cc81a8694\output\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\jcaruso\.android\build-cache\d76f6792426193c252866a44768ce42cc81a8694\output\AndroidManifest.xml:26:9-47
+uses-permission#android.permission.INTERNET
+ADDED from [com.koushikdutta.ion:ion:2.1.9] C:\Users\jcaruso\.android\build-cache\54b48e92c4371afa2fdf1a8aa4140f589ab792be\output\AndroidManifest.xml:11:5-67
+MERGED from [com.koushikdutta.async:androidasync:2.1.9] C:\Users\jcaruso\.android\build-cache\d7520bfcbeb9de3177b7b80bd0b452535b1a333c\output\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from [com.koushikdutta.ion:ion:2.1.9] C:\Users\jcaruso\.android\build-cache\54b48e92c4371afa2fdf1a8aa4140f589ab792be\output\AndroidManifest.xml:11:22-64
