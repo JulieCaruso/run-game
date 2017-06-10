@@ -13,6 +13,9 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 
 
+/**
+ * This classe is used to start the game
+ */
 public class RunGame extends ApplicationAdapter implements InputProcessor {
     private SpriteBatch batch;
     private Texture texture;
