@@ -1,3 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        is-multidex="false"
+        jar="C:\Users\gtshilombowanticale\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.6\57c2831c870743712b808384187ea856e541878f\gdx-backend-android-1.9.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="57c2831c870743712b808384187ea856e541878f">
+        <dex dex="C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.9.6_475fbddc3bba00af22c91ea3223b985613036b80.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\gtshilombowanticale\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.6\47d1e9b890e364ec28f128e9bb3b9a12a94c164\gdx-1.9.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="047d1e9b890e364ec28f128e9bb3b9a12a94c164">
+        <dex dex="C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\build\intermediates\pre-dexed\debug\gdx-1.9.6_8106d309310e25cc4e3d205045328073b8784e57.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\gtshilombowanticale\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.9.6\c249ef4060a4fada952f278455c8f7b9cba3c18a\gdx-box2d-1.9.6.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c249ef4060a4fada952f278455c8f7b9cba3c18a">
+        <dex dex="C:\Users\gtshilombowanticale\Desktop\hakathon\run-game\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.9.6_54bab2b23418a57515f0db7cbd7ff2f16bc5688a.jar" />
+    </item>
+
+</items>

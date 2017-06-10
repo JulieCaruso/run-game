@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/bgColour"
+    tools:context="adneom.moutons_electriques.MainActivity">
+
+    <Button
+        android:padding="8dp"
+        android:layout_margin="10dp"
+        android:id="@+id/see_scores"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="@string/see_scores"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="@string/enter_name" />
+
+</LinearLayout>

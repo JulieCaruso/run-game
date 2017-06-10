@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">run-game</string>
+    <string name="app_name">Moutons_electriques</string>
+    <string name="enter_name">Enter name</string>
+    <string name="enter_game">Enter game</string>
+    <string name="see_scores">See Scores</string>
+    <string name="check_fields">Please chose a user </string>
 
     <string name="game_over">Game over !!</string>
 
