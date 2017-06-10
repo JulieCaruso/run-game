@@ -16,12 +16,15 @@ public class SecondTest extends ApplicationAdapter{
 
     private Stage stage;
     //position:
-    private float arrivaleX = 0;
-    private float arrivaleY = 0;
+    private float runnerX = 0f;
+    private float runnerY = 0f;
+    private float logoX = 480f;
+    private float logoY = 770f;
     //batch:
     private SpriteBatch batch;
     //image
     private Texture runner;
+    private Texture adneom;
     //indicates if runner jumped
     private boolean isJumped = false;
 
@@ -33,6 +36,7 @@ public class SecondTest extends ApplicationAdapter{
         stage = new Stage();
         batch = new SpriteBatch();
         runner = new Texture(Gdx.files.internal("runner.gif"));
+        adneom = new Texture(Gdx.files.internal("adneom_logo.png"));
 
         //event
         Gdx.input.setInputProcessor(new InputProcessor() {
@@ -53,9 +57,11 @@ public class SecondTest extends ApplicationAdapter{
 
             @Override
             public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-                arrivaleX = 0;
+                runnerX = 0f;
+                logoX = 450f;
                 isJumped = !isJumped;
-                arrivaleY = (isJumped) ? 550f : 0f;
+                runnerY = (isJumped) ? 550f : 0f;
+                logoY = (isJumped) ?1320f : 779f;
                 return false;
             }
 
@@ -89,7 +95,8 @@ public class SecondTest extends ApplicationAdapter{
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act(Gdx.graphics.getDeltaTime());
         batch.begin();
-        batch.draw(runner,arrivaleX,arrivaleY);
+        batch.draw(runner,runnerX,runnerY);
+        batch.draw(adneom,logoX,logoY);
         batch.end();
     }
 

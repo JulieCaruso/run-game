@@ -26,20 +26,23 @@ public class RunGame extends ApplicationAdapter implements InputProcessor {
     private TextureRegion textureRegion;
     private long timestamp;
     private boolean gameStart;
-    float w ;
+    float w;
     float h;
 
-    private float arrivaleX = 0;
-    private float arrivaleY = 0;
+    private float runnerX = 0f;
+    private float runnerY = 0f;
+    private float logoX = 480f;
+    private float logoY = 770f;
     private Stage stage;
     //indicates if runner jumped
     private boolean isJumped = false;
+    private Texture adneom;
 
     @Override
     public void create() {
         Gdx.input.setInputProcessor(this);
-         w = Gdx.graphics.getWidth();
-         h = Gdx.graphics.getHeight();
+        w = Gdx.graphics.getWidth();
+        h = Gdx.graphics.getHeight();
         batch = new SpriteBatch();
         gameStart = false;
 
@@ -53,9 +56,11 @@ public class RunGame extends ApplicationAdapter implements InputProcessor {
         sprite.setPosition(0, 0);
         sprite.setSize(w, h);
 
+        adneom = new Texture(Gdx.files.internal("adneom_logo.png"));
+
         textureRegion = new TextureRegion(texture, 0, 0, w, h);
         background = new ParallaxBackground(new ParallaxLayer[]{
-                new ParallaxLayer(textureRegion, new Vector2(1, 1), new Vector2(0, 0)), }, w, h, new Vector2(50, 0));
+                new ParallaxLayer(textureRegion, new Vector2(1, 1), new Vector2(0, 0)),}, w, h, new Vector2(50, 0));
 
     }
 
@@ -63,8 +68,6 @@ public class RunGame extends ApplicationAdapter implements InputProcessor {
     public void render() {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         stage.act(Gdx.graphics.getDeltaTime());
-        arrivaleX = Math.abs(arrivaleX);
-        arrivaleY = Math.abs(arrivaleY);
 
         long noTouch = System.currentTimeMillis() / 100;
         long diff = noTouch - timestamp;
@@ -74,7 +77,8 @@ public class RunGame extends ApplicationAdapter implements InputProcessor {
 
         background.render(sourceX);
         batch.begin();
-        batch.draw(runner,arrivaleX,arrivaleY);
+        batch.draw(runner, runnerX, runnerY);
+        batch.draw(adneom, logoX, logoY);
         batch.end();
     }
 
@@ -103,9 +107,11 @@ public class RunGame extends ApplicationAdapter implements InputProcessor {
 
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-        arrivaleX = 0;
+        runnerX = 0f;
+        logoX = 450f;
         isJumped = !isJumped;
-        arrivaleY = (isJumped) ? 550f : 0f;
+        runnerY = (isJumped) ? 550f : 0f;
+        logoY = (isJumped) ? 1320f : 779f;
         return false;
     }
 
@@ -117,12 +123,10 @@ public class RunGame extends ApplicationAdapter implements InputProcessor {
         }
         long newTouch = System.currentTimeMillis() / 100;
         long diff = newTouch - timestamp;
-        System.out.println("Diff" + diff);
         if (diff < 200 && sourceX < 2) {
             sourceX = sourceX + 0.1f;
             timestamp = newTouch;
         }
-        System.out.println("sub" + diff);
         return true;
     }
 
