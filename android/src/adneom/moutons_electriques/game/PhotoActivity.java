@@ -48,8 +48,6 @@ public class PhotoActivity extends AppCompatActivity {
 
     @BindView(R.id.icon_camera)
     ImageView camera;
-    @BindView(R.id.preview)
-    ImageView preview;
     @BindView(R.id.photo1)
     ImageView photo1;
     @BindView(R.id.photo2)
@@ -124,7 +122,6 @@ public class PhotoActivity extends AppCompatActivity {
         if (requestCode == CAMERA_PIC_REQUEST) {
             uri = data.getData();
             image = (Bitmap) data.getExtras().get("data");
-            preview.setImageBitmap(image);
             //base64
             file2 = transformBase64(image);
             sendFile(file2);
@@ -151,7 +148,6 @@ public class PhotoActivity extends AppCompatActivity {
                 options.inPreferredConfig = Bitmap.Config.ARGB_8888;
                 image = BitmapFactory.decodeFile(imagePath, options);
 
-                preview.setImageBitmap(image);
                 file2 = transformBase64(image);
                 sendFile(file2);
             }
